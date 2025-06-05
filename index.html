@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Хамидов Амир — Фрилансер</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       font-family: Arial, sans-serif;
       background: #f2f2f2;
@@ -18,12 +15,12 @@
     header {
       background: #4a90e2;
       color: white;
-      padding: 40px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
     section {
       max-width: 800px;
-      margin: 20px auto;
+      margin: 30px auto;
       background: white;
       padding: 20px;
       border-radius: 10px;
@@ -33,29 +30,17 @@
       margin: 0 0 15px;
       font-size: 1.8em;
     }
-    p {
-      font-size: 1em;
-      margin: 10px 0;
-    }
-    a {
-      text-decoration: none;
-    }
-    .btn, .alol2 {
+    .btn {
       display: inline-block;
-      padding: 12px 24px;
+      padding: 10px 20px;
+      background: #4a90e2;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+    .btn:hover {
       background: #357ab8;
-      font-size: 16px;
-      border-radius: 8px;
-      font-weight: bold;
-      color: #fff;
-      margin-top: 10px;
-      transition: background 0.3s;
-    }
-    .btn:hover, .alol2:hover {
-      background: #285e8e;
-    }
-    .alol1 {
-      text-align: center;
     }
     footer {
       text-align: center;
@@ -63,22 +48,35 @@
       font-size: 14px;
       color: #777;
     }
+    .alol1 {
+      text-align: center;
+    }
+    .alol2 {
+      padding: 10px 20px;
+      background: #357ab8;
+      font-size: 15px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      margin-top: 10px;
+    }
 
     /* Адаптивность */
     @media (max-width: 600px) {
+      header, section {
+        padding: 15px;
+      }
       h1 {
         font-size: 1.5em;
       }
       h2 {
         font-size: 1.2em;
       }
-      .btn, .alol2 {
+      .alol2 {
         width: 100%;
-        font-size: 15px;
-      }
-      section {
-        margin: 10px;
-        padding: 15px;
+        font-size: 16px;
       }
     }
   </style>
@@ -91,12 +89,11 @@
 </header>
 
 <section class="alol1">
-  <h2>Вот моя электронная почта:</h2>
-  <p><a class="btn" href="mailto:hamidovamir000@gmail.com">hamidovamir000@gmail.com</a></p>
+  <h2>Вот моя электронная почта: hamidovamir000@gmail.com</h2>
 </section>
 
 <section class="alol1">
-  <a href="https://freelancehunt.com/my" class="alol2" target="_blank">Ссылка на мой профиль</a>
+  <a href="https://freelancehunt.com/my" class="alol2">Ссылка на мой профиль</a>
 </section>
 
 <footer>
