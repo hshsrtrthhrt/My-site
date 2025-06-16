@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #000;
+  }
+  
+  .slot {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .reel {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    border: 2px solid #555;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .reel img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  button {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #ff8533;
+  }
+  
+  .spin-anim {
+    transform: scale(1.1);
+  }
+  
+  .money-animation {
+    font-size: 20px;
+    color: gold;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  .warning {
+    color: orange;
+    margin-top: 10px;
+  }
+  
+  .jackpot-text {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0f0;
+  }
+  
+  .fa{
+    color: #fff;
+    font-size: 70px;
+    padding-top: 300px;
+  }
+  
+  @keyframes reelFall {
+    0% {
+      transform: translateY(100px);
+      opacity: 1;
+    }
+    
+    50%{
+      transform: translateY(-150px);
+      opacity: 1;
+    }
+    
+    100% {
+      transform: translateY(100px);
+      opacity: 1;
+    }
+  }
+  
+  .reel img {
+    animation: reelFall 0.5s ease ;
+  }
+  
+  .reel {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    border: 2px solid #555;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* 👈 Скрыть всё, что выходит за пределы */
+    position: relative;
+  }
+  
+  .reel-inner {
+    animation: reelFall 0.3s ease;
+  }
+  
+  @keyframes reelFall {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .reel {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    border: 2px solid #555;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* 👈 ВАЖНО: прячет выходящие за пределы части анимации */
+  }
+
+  @keyframes reelFall {
+    0% {
+      transform: translateY(-50%); /* фрукт сверху, невидим */
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0); /* в центре */
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%); /* уходит вниз */
+      opacity: 0;
+    }
+  }
+
+  .reel img {
+    width: 60px;
+    height: 60px;
+    animation: reelFall 0.4s ease;
+  }
+
+  
+  

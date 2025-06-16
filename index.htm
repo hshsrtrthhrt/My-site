@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Казино Слот</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Фруктовый Слот</h1>
+    <div id="balance">Баланс: 100₽</div>
+    <div class="slot">
+      <div id="r1" class="reel"><img src="img/d.png" alt=""></div>
+      <div id="r2" class="reel"><img src="img/h.png" alt=""></div>
+      <div id="r3" class="reel"><img src="img/g.png" alt=""></div>
+    </div>
+    <button id="spin-button" onclick="spin()">Крутить за 10₽</button>
+    <div id="result"></div>
+    <div id="deposit" style="display:none;" class="warning">Пора пополнить баланс!</div>
+    <div id="extra-message" class="warning"></div>
+    <div id="jackpot-info" class="jackpot-text">Джекпот = 5000₽</div>
+  </div>
+  <h1 class="fa">ДЕНЬГИ НЕ ВЫПЛАЧИВАЮ В РАЗВЛИКАТЕЛЬНЫХ ЦЕЛЯХ И ДЕНЬГИ ВЕРТУАЛЬНЫЕ</h1>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
